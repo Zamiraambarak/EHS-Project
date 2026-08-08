@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>EHS - Inspection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+                E
+            </div>
+
+            <div>
+
+                <h2>EHS</h2>
+
+                <span>
+                    Management System
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <p class="menu-title">
+                MAIN MENU
+            </p>
+
+
+            <a href="dashboard.html"
+                class="menu-item">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="inspection.html"
+                class="menu-item active">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <span>
+                    Inspection
+                </span>
+
+            </a>
+
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <span>
+                    Hazard
+                </span>
+
+            </a>
+
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-file-circle-exclamation"></i>
+
+                <span>
+                    Findings
+                </span>
+
+            </a>
+
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>
+                    Corrective Action
+                </span>
+
+            </a>
+
+
+            <p class="menu-title">
+                REPORTING
+            </p>
+
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <span>
+                    SAP Report
+                </span>
+
+            </a>
+
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <span>
+                    Analytics
+                </span>
+
+            </a>
+
+
+            <p class="menu-title">
+                MANAGEMENT
+            </p>
+
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-users"></i>
+
+                <span>
+                    User Management
+                </span>
+
+            </a>
+
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-database"></i>
+
+                <span>
+                    Master Data
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#"
+                class="menu-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <div class="user-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div class="profile-info">
+
+                    <strong>
+                        Admin EHS
+                    </strong>
+
+                    <span>
+                        Administrator
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Inspection
+                </h1>
+
+                <p>
+                    Manage and monitor EHS inspection activities.
+                </p>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button class="icon-button">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="topbar-user">
+
+                    <div class="profile-avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Admin EHS
+                        </strong>
+
+                        <span>
+                            Administrator
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- CONTENT -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <h2>
+                        Inspection Management
+                    </h2>
+
+                    <p>
+                        Create, monitor and manage workplace inspections.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-button">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    New Inspection
+
+                </button>
+
+            </div>
+
+
+
+            <!-- SUMMARY -->
+
+            <div class="inspection-summary">
+
+
+                <div class="inspection-stat">
+
+                    <div class="inspection-stat-icon blue">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Inspection
+                        </span>
+
+                        <strong>
+                            245
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="inspection-stat">
+
+                    <div class="inspection-stat-icon orange">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            In Progress
+                        </span>
+
+                        <strong>
+                            18
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="inspection-stat">
+
+                    <div class="inspection-stat-icon green">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Completed
+                        </span>
+
+                        <strong>
+                            213
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="inspection-stat">
+
+                    <div class="inspection-stat-icon red">
+
+                        <i class="fa-solid fa-calendar-xmark"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Overdue
+                        </span>
+
+                        <strong>
+                            14
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FILTER -->
+
+            <div class="dashboard-card filter-card">
+
+                <div class="filter-header">
+
+                    <div>
+
+                        <h3>
+                            Inspection List
+                        </h3>
+
+                        <p>
+                            View and manage all inspections.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="filter-grid">
+
+
+                    <div class="filter-field">
+
+                        <label>
+                            Search
+                        </label>
+
+                        <div class="search-input">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input
+                                type="text"
+                                placeholder="Search inspection ID...">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="filter-field">
+
+                        <label>
+                            Department
+                        </label>
+
+                        <select>
+
+                            <option>
+                                All Departments
+                            </option>
+
+                            <option>
+                                EHS
+                            </option>
+
+                            <option>
+                                Production
+                            </option>
+
+                            <option>
+                                Warehouse
+                            </option>
+
+                            <option>
+                                Maintenance
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-field">
+
+                        <label>
+                            Area
+                        </label>
+
+                        <select>
+
+                            <option>
+                                All Areas
+                            </option>
+
+                            <option>
+                                Workshop
+                            </option>
+
+                            <option>
+                                Warehouse
+                            </option>
+
+                            <option>
+                                Production
+                            </option>
+
+                            <option>
+                                Office
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-field">
+
+                        <label>
+                            Status
+                        </label>
+
+                        <select>
+
+                            <option>
+                                All Status
+                            </option>
+
+                            <option>
+                                Scheduled
+                            </option>
+
+                            <option>
+                                In Progress
+                            </option>
+
+                            <option>
+                                Completed
+                            </option>
+
+                            <option>
+                                Overdue
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TABLE -->
+
+            <div class="dashboard-card">
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Inspection ID
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Department
+                                </th>
+
+                                <th>
+                                    Area
+                                </th>
+
+                                <th>
+                                    Inspector
+                                </th>
+
+                                <th>
+                                    Observation
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        INS-2026-0245
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    07 Aug 2026
+                                </td>
+
+                                <td>
+                                    Production
+                                </td>
+
+                                <td>
+                                    Workshop
+                                </td>
+
+                                <td>
+                                    Ahmad Fauzi
+                                </td>
+
+                                <td>
+                                    8
+                                </td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        INS-2026-0244
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    07 Aug 2026
+                                </td>
+
+                                <td>
+                                    Warehouse
+                                </td>
+
+                                <td>
+                                    Storage Area
+                                </td>
+
+                                <td>
+                                    Rian Pratama
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+
+                                    <span class="status progress">
+                                        In Progress
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        INS-2026-0243
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    06 Aug 2026
+                                </td>
+
+                                <td>
+                                    Maintenance
+                                </td>
+
+                                <td>
+                                    Workshop
+                                </td>
+
+                                <td>
+                                    Siti Rahma
+                                </td>
+
+                                <td>
+                                    11
+                                </td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        INS-2026-0242
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    06 Aug 2026
+                                </td>
+
+                                <td>
+                                    Production
+                                </td>
+
+                                <td>
+                                    Production Line 1
+                                </td>
+
+                                <td>
+                                    Dimas Putra
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+
+                                    <span class="status overdue">
+                                        Overdue
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        INS-2026-0241
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    05 Aug 2026
+                                </td>
+
+                                <td>
+                                    HSE
+                                </td>
+
+                                <td>
+                                    Office
+                                </td>
+
+                                <td>
+                                    Budi Santoso
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+
+                                    <button class="table-action">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- PAGINATION -->
+
+                <div class="pagination">
+
+                    <span>
+                        Showing 1–5 of 245 inspections
+                    </span>
+
+                    <div>
+
+                        <button>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <button class="page-active">
+                            1
+                        </button>
+
+                        <button>
+                            2
+                        </button>
+
+                        <button>
+                            3
+                        </button>
+
+                        <button>
+                            4
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
